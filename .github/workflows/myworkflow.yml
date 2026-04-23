@@ -8,9 +8,9 @@ jobs:
       - name: Print Hello
         run: echo "Hello World"
 
-  second-job:
-    print:
-      runs-on: macOS-latest
-      steps:
-        - name: list files
-          run: ls -a
+second-job:
+  print:
+    runs-on: macOS-latest
+    steps:
+      - name: list files
+        run: ls -a
