@@ -7,3 +7,19 @@ jobs:
     steps:
       - name: Print Hello
         run: echo "Hello World"
+
+  second-job:
+    print:
+      runs-on: macOS-latest
+      steps:
+        - name: Say HI
+          run: echo "HI"
+
+on:
+  push:
+    jobs:
+      print:
+        runs-on: macOS-latest
+        steps:
+          - name: list files
+            run: ls -a
