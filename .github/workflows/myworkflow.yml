@@ -12,14 +12,5 @@ jobs:
     print:
       runs-on: macOS-latest
       steps:
-        - name: Say HI
-          run: echo "HI"
-
-on:
-  push:
-    jobs:
-      print:
-        runs-on: macOS-latest
-        steps:
-          - name: list files
-            run: ls -a
+        - name: list files
+          run: ls -a
